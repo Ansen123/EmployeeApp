@@ -1,0 +1,43 @@
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+         
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col"> Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Department</th>
+                        <th scope="col">Mob</th>
+                        <th scope="col">Salary</th>
+                      
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr *ngFor = "let i of view" >
+                        <td>{{i.id}}</td>
+                        <td>{{i.name}}</td>
+                        <td>{{i.address}}</td>
+                        <td>{{i.email}}</td>
+                        <td>{{i.designation}}</td>
+                        <td>{{i.department}}</td>
+                        <td>{{i.mob}}</td>
+                        <td>{{i.salary}}</td>
+                       
+
+                       <td> <button class="btn btn-primary" >Delete</button></td> 
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+           
+        </div>
+    </div>
+</div>
